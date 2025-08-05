@@ -1,0 +1,13 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos de entorno
+.env
+
+# Logs
+logs/
+*.log
+
+# Otros archivos temporales
+.DS_Store
+npm-debug.log*
