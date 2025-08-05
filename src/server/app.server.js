@@ -22,7 +22,7 @@ this.#loadrouters();
 this.#app.use(express.json());
 this.#app.use(express.urlencoded({extended : true}));
 this.#app.use(cors({
-origin : ["http://localhost:5173" , "https://backend-quiz-app-6yc1.onrender.com"],
+origin : ["http://localhost:5173" , "https://quiz-app-orcin-eta.vercel.app" , "https://backend-quiz-app-6yc1.onrender.com"],
 credentials : true,
 methods : ["GET" , "POST" , "DELETE" , "PATCH" , "PUT"],
 
@@ -46,7 +46,8 @@ this.#app.listen(API_PORT , async function() {
 
 try {
 console.log("connection suscesfully in " + API_PORT)
-}catch(e) {
+}
+catch(e) {
   console.log("error in connecting in PORT "+  API_PORT + " " + e.name);
 }
 
